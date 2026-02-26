@@ -1,0 +1,7 @@
+baseURL = 'https://lottie4j.com/'
+languageCode = 'en-us'
+title = 'Lottie4J'
+theme = 'hugo-theme-relearn'
+
+[params]
+themeVariant = 'learn'
