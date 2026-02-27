@@ -13,6 +13,8 @@ Provide a set of Java libraries that can:
 
 The goal is to achieve this by using a recent Java LTS version (21) with the use of Records to minimize the code and make the project easy to maintain, test, and extend.
 
+The sources of this project are available on [github.com/lottie4j/lottie4j](https://github.com/lottie4j/lottie4j).
+
 ## Learn About Lottie
 
 New to Lottie? Check out our [introduction to the Lottie format](/lottie-format/) to learn about this powerful animation format, its capabilities, and available resources.
