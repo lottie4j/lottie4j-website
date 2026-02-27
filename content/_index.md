@@ -5,13 +5,17 @@ type = "home"
 
 ## Goal of the Lottie4J project
 
-Provide a set of Java libraries that can
+Provide a set of Java libraries that can:
 
 * Parse existing Lottie animations to Java objects.
 * Generate Lottie files from Java objects.
 * Play Lottie animations in JavaFX.
 
-The goal is to achieve this by using a recent Java version (21) with the use of Records to minimize the code and make the project easy to maintain, test, and extend.
+The goal is to achieve this by using a recent Java LTS version (21) with the use of Records to minimize the code and make the project easy to maintain, test, and extend.
+
+## Learn About Lottie
+
+New to Lottie? Check out our [introduction to the Lottie format](/lottie-format/) to learn about this powerful animation format, its capabilities, and available resources.
 
 ## Current status
 
