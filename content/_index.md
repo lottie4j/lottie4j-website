@@ -3,6 +3,8 @@ title = "Lottie4J Project"
 type = "home"
 +++
 
+Current release: **1.0.0 (2026-03-02)**, see [release notes](/releases/).
+
 ## Goal of the Lottie4J project
 
 Provide a set of Java libraries that can:

@@ -1,6 +1,6 @@
 +++
 title = "About the Lottie Format"
-weight = 10
+weight = 20
 +++
 
 ## What is Lottie?
