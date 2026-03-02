@@ -47,3 +47,7 @@
     {{- partial "twitter_cards.html" . }}
     {{- partial "opengraph.html" . }}
     {{- partial "schema.html" . }}
+
+    {{ if isset .Params "canonical" }}
+    <link rel="canonical" href="{{ .Params.Canonical}}" />
+    {{ end }}
