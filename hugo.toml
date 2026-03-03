@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Lottie4J'
 theme = 'hugo-theme-relearn'
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 themeVariant = 'learn'
 editURL = 'https://github.com/lottie4j/lottie4j-website/edit/main/content/'
