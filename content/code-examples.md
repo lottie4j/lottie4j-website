@@ -1,6 +1,6 @@
 +++
 title = "Code Examples"
-weight = 15
+weight = 30
 +++
 
 ## Including the Library in Your Project

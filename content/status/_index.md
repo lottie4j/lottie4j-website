@@ -1,7 +1,7 @@
 +++
-title = "Status Reports"
+title = "Blogs and Reports"
 type = "chapter"
-weight = 30
+weight = 99
 +++
 
 {{% children depth="3" sort="date" order="asc" %}}

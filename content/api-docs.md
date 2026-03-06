@@ -1,6 +1,6 @@
 +++
 title = "API Documentation"
-weight = 13
+weight = 40
 +++
 
 API Documentation is provided by [APIdia](https://apidia.net/mvn/com.lottie4j/lottie4j/).

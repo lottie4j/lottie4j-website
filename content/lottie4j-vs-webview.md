@@ -1,6 +1,6 @@
 +++
 title = "Lottie4J vs WebView"
-weight = 11
+weight = 14
 +++
 
 If you want to include a Lottie animation in a JavaFX application, you essentially have two options:
