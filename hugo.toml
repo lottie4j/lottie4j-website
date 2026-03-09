@@ -7,5 +7,5 @@ theme = 'hugo-theme-relearn'
 unsafe = true
 
 [params]
-themeVariant = 'learn'
+themeVariant = 'zen-light'
 editURL = 'https://github.com/lottie4j/lottie4j-website/edit/main/content/'
