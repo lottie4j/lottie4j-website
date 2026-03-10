@@ -10,6 +10,7 @@ Many rendering improvements after testing more animations. This contains some AP
 * Changed license to **Apache V2**
 * Changed logging to **SLF4J**
 * Code restructuring and **JavaDoc** improvements
+* The **Core** module has been extended with new Java objects to support missing Lottie animation definitions related to the improvements in the player.
 * **LottiePlayer** in module FXPlayer
   * Correctly close paths, fixing a gap in the thick border
   * Better border rendering
