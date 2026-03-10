@@ -7,7 +7,7 @@ weight = 10
 
 Many rendering improvements after testing more animations. This contains some API changes, that's the reason for the version bump to 1.1.0.
 
-{{< youtube hOdttlmGUYg >}}
+{{< youtube _zZ1q6zbRgM >}}
 
 * Changed license to **Apache V2**
 * Changed logging to **SLF4J**
