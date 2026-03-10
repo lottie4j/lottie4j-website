@@ -36,7 +36,7 @@ Many rendering improvements after testing more animations. This contains some AP
 * New **LottieFileSimpleViewer** in module FXFileViewer to show the animation in a simple way with the JavaFX player only.
 * Integrated a unit test **CompareFxViewWithWebViewTest** in FXFileViewer to compare the JavaFX player with the JavaScript player, using a screenshot comparison approach. This test can not run on CI, because it requires a display output, but it can be run locally. Hopefully this can be fixed later with headless JavaFX, see [this issue](https://github.com/lottie4j/lottie4j/issues/4).
 
-The list of all changes between 1.0.0 and 1.1.0 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/1.0.0...1.1.0).
+The list of all changes between 1.0.0 and 1.1.0 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.0.0...v1.1.0).
 
 ## 2026-03-02, 1.0.0
 
