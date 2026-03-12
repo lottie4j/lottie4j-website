@@ -3,6 +3,8 @@ title = "Code Examples"
 weight = 30
 +++
 
+Lottie4J requires Java 21 or higher.
+
 ## Including the Library in Your Project
 
 This library is available from Maven Central.
