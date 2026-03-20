@@ -3,6 +3,41 @@ title = "Lottie4J Releases"
 weight = 10
 +++
 
+## 2026-03-20, 1.2.0
+
+Many improvements after 1.1.0, with new .lottie format support, rendering fixes, performance work, and dependency updates.
+
+* **Core**
+  * Added `.lottie` (dotLottie) loader support.
+  * Added support for merge and modifier shapes.
+  * Added missing blend mode support.
+  * Added spatial bezier interpolation for position animations.
+  * Fixed model field types and added missing JSON properties for mask, layer, and animation objects.
+  * Improved JSON output and value ordering when recreating JSON structures.
+  * Upgraded to Jackson 3 (`tools.jackson`), including follow-up compatibility fixes and CVE-related dependency updates.
+* **LottiePlayer** in module FXPlayer
+  * Improved playback speed by reducing rendering passes.
+  * Added caching of layer/precomp render metadata to improve heavy animation playback.
+  * Added adaptive rendering mode toggle.
+  * Made `LottiePlayer` resizable.
+  * Added cropping support.
+  * Integrated animated mask rendering.
+  * Added play-between-markers.
+  * Fixed last-frame/keyframe boundary issues that could cause disappearing layers.
+  * Improved consistency in path stroke rendering.
+  * Extended unit test to compare loaded and recreated JSON.
+* **FXFileViewer**
+  * Refactored duplicated WebView JavaScript bridge code into reusable components.
+  * Improved FX vs JS debug views.
+  * Improved compare test synchronization and added resized-player validation.
+* **Project and docs**
+  * Added Java 21 support and badge updates.
+  * Fixed package names and build warnings, and completed additional JavaDoc cleanup.
+  * General cleanup/restructuring and test improvements.
+  * Added README/media updates and extra links.
+
+The list of all changes between 1.1.0 and 1.2.0 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.1.0...v1.2.0).
+
 ## 2026-03-10, 1.1.0
 
 Many rendering improvements after testing more animations. This contains some API changes, that's the reason for the version bump to 1.1.0.
