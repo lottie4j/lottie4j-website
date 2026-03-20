@@ -7,6 +7,8 @@ weight = 10
 
 Many improvements after 1.1.0, with new .lottie format support, rendering fixes, performance work, and dependency updates.
 
+{{< youtube 9lE6UO8XNpU >}}
+
 * **Core**
   * Added `.lottie` (dotLottie) loader support.
   * Added support for merge and modifier shapes.
