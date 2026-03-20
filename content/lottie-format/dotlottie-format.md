@@ -69,7 +69,7 @@ Lottie4J supports loading dotLottie files directly. The library handles decompre
 File file = new File("src/test/resources/dot/demo-3.lottie");
 
 // Get the first animation in the .lottie package
-Animation animation = LottieFileLoader.loadAnimation(File);
+Animation animation = LottieFileLoader.load(File);
 
 // Load as a DotLottie object for more advanced features
 DotLottie dot = LottieFileLoader.loadDotLottie(file);
