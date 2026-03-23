@@ -3,6 +3,12 @@ title = "Lottie4J Releases"
 weight = 10
 +++
 
+## 2026-03-20, 1.2.2
+
+When inverting the colors in the player, don't invert the background color.
+
+The list of all changes between 1.2.1 and 1.2.2 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.1...v1.2.2).
+
 ## 2026-03-20, 1.2.1
 
 Added invert method for LottiePlayer. This allows to invert colors, e.g. when using white/black logos and want to link the colors to dark/light theme.
