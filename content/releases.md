@@ -3,7 +3,7 @@ title = "Lottie4J Releases"
 weight = 10
 +++
 
-## 2026-03-20, 1.2.2
+## 2026-03-23, 1.2.2
 
 When inverting the colors in the player, don't invert the background color.
 
