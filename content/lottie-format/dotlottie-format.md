@@ -26,13 +26,22 @@ A `.lottie` file is a ZIP archive with this typical structure:
 
 ```
 animation.lottie
-├── manifest.json          # Metadata and animation definitions
-├── animations/
-│   ├── animation1.json   # Individual Lottie JSON files
-│   └── animation2.json
-└── images/               # Embedded image assets
-    ├── image1.png
-    └── image2.png
+├─ manifest.json            # Required: Metadata file describing the package
+├─ a/                       # Required: Directory containing Lottie JSON animations
+│  ├─ animation_1.json      # Example animation file
+│  └─ animation_2.json      # Another animation file
+├─ i/                       # Optional: Directory for image assets
+│  ├─ img_1.webp            # Example image asset
+│  └─ img_2.png             # Another image asset
+├─ s/                       # Optional: Directory for state machine files
+│  ├─ state_machine_1.json  # Example state machine file
+│  └─ state_machine_2.json  # Another state machine file
+├─ t/                       # Optional: Directory for theme files
+│  ├─ theme_1.json          # Example theme file
+│  └─ theme_2.json          # Another theme file
+└─ f/                       # Optional: Directory for font assets
+   ├─ BrandFont-Bold.ttf    # Example font file
+   └─ BrandFont-Regular.woff2 # Another font file
 ```
 
 ### Example Manifest
