@@ -44,6 +44,8 @@ animation.lottie
    └─ BrandFont-Regular.woff2 # Another font file
 ```
 
+Check [dotlottie.io/spec/2.0](https://dotlottie.io/spec/2.0/) for more details about the format.
+
 ### Example Manifest
 
 ```json
