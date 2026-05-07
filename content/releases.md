@@ -3,6 +3,22 @@ title = "Lottie4J Releases"
 weight = 10
 +++
 
+## 2026-05-07, 1.2.3
+
+* dotLottie data model extended to include all (optional) definitions in V1 and v2.
+* Jackson library bumped to 3.1.1.
+* Headless unit tests added for comparison between JavaScript generted images and the JavaFX player output. For more info, see [Testing Lottie4J JavaFX Animations in GitHub Actions Without a Display: JavaFX 26 Headless to the Rescue](https://webtechie.be/post/2026-04-20-lottie4j-unit-test-with-headless-javafx/).
+  * Use Java 25 JVM in CI (required minimum for JavaFX 26)
+  * Use Selenium and ChromeDriver to generated JavaScript images (on PC).
+* Extended JavaDoc.
+* [PR #8 by @bguedon](https://github.com/lottie4j/lottie4j/pull/8): Fix track-matte source layer index direction.
+* [PR #9 by @bguedon](https://github.com/lottie4j/lottie4j/pull/9): Apply layer-level vector masks (masksProperties) to top-level layers.
+* [PR #10 by @bguedon](https://github.com/lottie4j/lottie4j/pull/10): Type Layer in/out points and time stretch as Double.
+
+Thanks to contributions by [@FDelporte](https://github.com/FDelporte), [@bguedon](https://github.com/bguedon), and [@bruno-obv](https://github.com/bruno-obv).
+
+The list of all changes between 1.2.2 and 1.2.3 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.2...v1.2.3).
+
 ## 2026-03-23, 1.2.2
 
 When inverting the colors in the player, don't invert the background color.
