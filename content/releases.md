@@ -3,6 +3,16 @@ title = "Lottie4J Releases"
 weight = 10
 +++
 
+## 2026-06-15, 1.2.4
+
+* Fixed Lottie arc rendering: constrained the easing solver to prevent bezier curve divergence.
+* Added bisection fallback for flat-point curves.
+* Fixed full-circle trim path flickering caused by floating-point precision loss in offset wrapping.
+* Fixed border rendering error.
+* Added Pi4J test file.
+
+The list of all changes between 1.2.3 and 1.2.4 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.3...v1.2.4).
+
 ## 2026-05-07, 1.2.3
 
 * dotLottie data model extended to include all (optional) definitions in V1 and v2.

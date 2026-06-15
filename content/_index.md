@@ -5,7 +5,7 @@ type = "home"
 
 **Lottie4J is a library for parsing Lottie animations as Java objects and playing them as JavaFX animations.**
 
-Current release: **1.2.3 (2026-05-07)**, see [release notes](/releases/).
+Current release: **1.2.4 (2026-06-15)**, see [release notes](/releases/).
 
 ## Goal of the Lottie4J project
 
