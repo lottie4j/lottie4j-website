@@ -1,5 +1,6 @@
 +++
-title = "Lottie4J Project"
+title = "Lottie4J — Lottie Animations for Java & JavaFX"
+description = "Lottie4J is an open-source Java library to parse Lottie animations into Java objects, generate Lottie files, and play them as native JavaFX animations, no WebView required."
 type = "home"
 +++
 
@@ -27,7 +28,7 @@ New to Lottie? Check out our [introduction to the Lottie format](/lottie-format/
 
 ## Current status
 
-This project is still in its early stages.
+Lottie4J is released and under active development. The library can parse Lottie files into Java objects, generate Lottie files from Java objects, and play animations in JavaFX, including keyframe interpolation, animated properties, shape rendering, fills and gradients, stroke styling, trim paths, layer transforms and parenting. It already handles many complex real-world animations.
 
-See [status posts](/status/).
+Follow the progress in the [status posts](/status/) and check the [release notes](/releases/) for the latest changes.
 
