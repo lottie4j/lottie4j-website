@@ -435,7 +435,7 @@ disableTagHiddenPages = false
 # Default: '::'
 # Changes the title separator used when concatenating the page title with the
 # site title. This is consistently used throughout the theme.
-titleSeparator = '::'
+titleSeparator = ' - '
 
 # Breadcrumb separator.
 # Default: '>'
