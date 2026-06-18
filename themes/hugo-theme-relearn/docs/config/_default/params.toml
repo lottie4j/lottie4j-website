@@ -432,7 +432,6 @@ disableTagHiddenPages = false
 # These options modify how your content is displayed.
 
 # Title separator.
-# Default: '::'
 # Changes the title separator used when concatenating the page title with the
 # site title. This is consistently used throughout the theme.
 titleSeparator = ' - '

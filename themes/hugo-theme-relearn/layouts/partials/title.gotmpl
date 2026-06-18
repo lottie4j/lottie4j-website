@@ -20,18 +20,18 @@
     {{- if $.linkTitle }}
       {{- $title = printf "%s" $term_title }}
     {{- else if $.reverse }}
-      {{- $title = printf "%s %s %s" $term_title (default "::" .Site.Params.titleSeparator) $taxonomy_title }}
+      {{- $title = printf "%s %s %s" $term_title (default "-" .Site.Params.titleSeparator) $taxonomy_title }}
     {{- else }}
-      {{- $title = printf "%s %s %s" $taxonomy_title (default "::" .Site.Params.titleSeparator) $term_title }}
+      {{- $title = printf "%s %s %s" $taxonomy_title (default "-" .Site.Params.titleSeparator) $term_title }}
     {{- end }}
   {{- end }}
 
   {{- if $.fullyQualified }}
     {{- if and $title $siteTitle (not (eq $title $siteTitle)) }}
       {{- if $.reverse }}
-        {{- $title = printf "%s %s %s" $title (default "::" site.Params.titleSeparator) $siteTitle }}
+        {{- $title = printf "%s %s %s" $title (default "-" site.Params.titleSeparator) $siteTitle }}
       {{- else }}
-        {{- $title = printf "%s %s %s" $siteTitle (default "::" site.Params.titleSeparator) $title }}
+        {{- $title = printf "%s %s %s" $siteTitle (default "-" site.Params.titleSeparator) $title }}
       {{- end }}
     {{- end }}
   {{- end }}

@@ -1,7 +1,7 @@
 {{- /*
   Project override of the relearn theme's title.gotmpl.
   Only change vs. the theme: on the home page we emit the front-matter title
-  verbatim and skip the " :: <site title>" suffix, so the home <title> reads
+  verbatim and skip the " - <site title>" suffix, so the home <title> reads
   exactly as authored (e.g. "Lottie4J — Lottie Animations for Java & JavaFX")
   instead of duplicating the "Lottie4J" brand. All other pages are unchanged.
 */ -}}
@@ -27,18 +27,18 @@
     {{- if $.linkTitle }}
       {{- $title = printf "%s" $term_title }}
     {{- else if $.reverse }}
-      {{- $title = printf "%s %s %s" $term_title (default "::" .Site.Params.titleSeparator) $taxonomy_title }}
+      {{- $title = printf "%s %s %s" $term_title (default "-" .Site.Params.titleSeparator) $taxonomy_title }}
     {{- else }}
-      {{- $title = printf "%s %s %s" $taxonomy_title (default "::" .Site.Params.titleSeparator) $term_title }}
+      {{- $title = printf "%s %s %s" $taxonomy_title (default "-" .Site.Params.titleSeparator) $term_title }}
     {{- end }}
   {{- end }}
 
   {{- if and $.fullyQualified (not (eq .Kind "home")) }}
     {{- if and $title $siteTitle (not (eq $title $siteTitle)) }}
       {{- if $.reverse }}
-        {{- $title = printf "%s %s %s" $title (default "::" site.Params.titleSeparator) $siteTitle }}
+        {{- $title = printf "%s %s %s" $title (default "-" site.Params.titleSeparator) $siteTitle }}
       {{- else }}
-        {{- $title = printf "%s %s %s" $siteTitle (default "::" site.Params.titleSeparator) $title }}
+        {{- $title = printf "%s %s %s" $siteTitle (default "-" site.Params.titleSeparator) $title }}
       {{- end }}
     {{- end }}
   {{- end }}
