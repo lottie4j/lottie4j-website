@@ -1,5 +1,6 @@
 +++
 title = "Lottie4J vs WebView"
+description = "Lottie4J vs WebView in JavaFX: why a native Canvas-based Lottie player beats embedding a browser engine — smaller footprint, faster startup, full scene-graph integration, and offline support."
 weight = 14
 +++
 

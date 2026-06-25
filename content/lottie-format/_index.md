@@ -1,5 +1,6 @@
 +++
 title = "About the Lottie Format"
+description = "What is the Lottie animation format? Learn about the JSON-based vector animation standard created by Airbnb, its benefits, and how it works across platforms including JavaFX."
 weight = 20
 +++
 

@@ -1,5 +1,6 @@
 +++
 title = "API Documentation"
+description = "Browse the full Lottie4J API documentation (Javadoc) for the core and JavaFX fxplayer modules."
 weight = 40
 +++
 

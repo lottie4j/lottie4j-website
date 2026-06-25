@@ -1,5 +1,6 @@
 +++
 title = "Videos"
+description = "Watch tutorials and demos about Lottie4J showing how to parse and play Lottie animations natively in JavaFX."
 weight = 50
 +++
 

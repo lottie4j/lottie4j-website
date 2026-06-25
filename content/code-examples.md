@@ -1,5 +1,6 @@
 +++
 title = "Code Examples"
+description = "Get started with Lottie4J: add the Maven Central dependency for Java 21+, then load, inspect, and play Lottie animations in JavaFX with these minimal code examples."
 weight = 30
 +++
 

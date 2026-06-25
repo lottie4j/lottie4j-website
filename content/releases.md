@@ -1,5 +1,6 @@
 +++
 title = "Lottie4J Releases"
+description = "Release notes and changelog for the Lottie4J Java library, including new features, rendering fixes, and version history."
 weight = 10
 +++
 
