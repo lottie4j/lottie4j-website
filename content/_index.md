@@ -7,7 +7,11 @@ type = "home"
 <div class="l4j-hero">
   <img class="l4j-hero-logo" src="/favicon/android-chrome-512x512.png" alt="Lottie4J logo" width="120" height="120" loading="eager">
   <h1 class="l4j-hero-title">Lottie Animations for Java &amp; JavaFX</h1>
-  <p class="l4j-hero-sub">Parse, generate &amp; play Lottie animations natively in JavaFX — <strong>no WebView required.</strong></p>
+  <p class="l4j-hero-sub">
+    Parse, generate &amp; play Lottie animations natively in JavaFX.
+    <br/>
+    <strong>No WebView required.</strong>
+  </p>
   <p class="l4j-hero-release"><span class="l4j-hero-dot"></span> Latest release: <a href="/releases/">v1.2.4 · 2026-06-15</a></p>
   <p class="l4j-hero-cta">
     <a class="l4j-btn l4j-btn-primary" href="#quick-start"><i class="fas fa-rocket"></i> Get Started</a>
