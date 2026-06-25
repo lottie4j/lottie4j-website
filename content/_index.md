@@ -4,12 +4,18 @@ description = "Lottie4J is an open-source Java library to parse Lottie animation
 type = "home"
 +++
 
+<div class="l4j-hero">
+  <img class="l4j-hero-logo" src="/favicon/android-chrome-512x512.png" alt="Lottie4J logo" width="120" height="120" loading="eager">
+  <h1 class="l4j-hero-title">Lottie Animations for Java &amp; JavaFX</h1>
+  <p class="l4j-hero-sub">Parse, generate &amp; play Lottie animations natively in JavaFX — <strong>no WebView required.</strong></p>
+  <p class="l4j-hero-release"><span class="l4j-hero-dot"></span> Latest release: <a href="/releases/">v1.2.4 · 2026-06-15</a></p>
+  <p class="l4j-hero-cta">
+    <a class="l4j-btn l4j-btn-primary" href="#quick-start"><i class="fas fa-rocket"></i> Get Started</a>
+    <a class="l4j-btn l4j-btn-ghost" href="https://github.com/lottie4j/lottie4j" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+  </p>
+</div>
+
 **Lottie4J is an open-source Java library that parses Lottie animations into Java objects and plays them as native JavaFX animations — no WebView, no browser engine, no JavaScript bridge.**
-
-{{< button href="https://github.com/lottie4j/lottie4j" icon="fab fa-github" >}}View on GitHub{{< /button >}}
-{{< button href="#quick-start" icon="fas fa-rocket" style="primary" >}}Get Started{{< /button >}}
-
-Current release: **1.2.4 (2026-06-15)**, see [release notes](/releases/).
 
 ## Quick start
 
