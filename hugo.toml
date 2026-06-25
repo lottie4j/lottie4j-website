@@ -1,5 +1,5 @@
 baseURL = 'https://lottie4j.com/'
-languageCode = 'en-US'
+locale = 'en-US'
 title = 'Lottie4J'
 theme = 'hugo-theme-relearn'
 enableRobotsTXT = true
