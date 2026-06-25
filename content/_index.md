@@ -62,16 +62,16 @@ See the [code examples](/code-examples/) for the full, runnable application and 
 
 {{< cards >}}
   {{% card title="Native JavaFX rendering" icon="fas fa-bolt" %}}
-Animations are drawn directly to a JavaFX `Canvas`. No embedded browser, no JavaScript bridge — just a standard JavaFX `Node` you can style and lay out like any other.
+Drawn straight to a JavaFX `Canvas`. No browser, no JS bridge. It's just a `Node`.
   {{% /card %}}
   {{% card title="Parse &amp; generate" icon="fas fa-code" %}}
-Read Lottie JSON into typed Java objects, inspect or modify them, and write valid Lottie files back out.
+Read Lottie JSON into typed Java objects, and write valid Lottie files back out.
   {{% /card %}}
   {{% card title="Modern, minimal Java" icon="fab fa-java" %}}
-Built on Java 21 LTS using Records to keep the codebase small and easy to maintain, test, and extend.
+Built on Java 21 LTS with Records — a small, maintainable codebase.
   {{% /card %}}
   {{% card title="Lightweight &amp; offline-first" icon="fas fa-feather" %}}
-Needs only `javafx.graphics` — no `javafx.web`. That means a fast startup, a small jlink/jpackage footprint, and no network dependency.
+Needs only `javafx.graphics`. Fast startup, tiny jlink footprint, no network.
   {{% /card %}}
 {{< /cards >}}
 

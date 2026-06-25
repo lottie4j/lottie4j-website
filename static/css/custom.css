@@ -122,3 +122,21 @@
   color: #ffffff;
   border-color: #ffffff;
 }
+
+/* ---------------------------------------------------------------------------
+   Homepage "Why Lottie4J" cards
+   Force the four feature cards onto a single row (on desktop) and drop the
+   theme's tall 300px min-height so the boxes hug their content. The theme's
+   responsive rules still collapse to 2 columns on tablet and 1 on mobile.
+--------------------------------------------------------------------------- */
+.home .card-container {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+}
+.home .card-container .card {
+  min-height: 0;
+  height: auto;
+}
+.home .card-container .card-content {
+  padding: 1.1rem;
+}
