@@ -5,4 +5,4 @@ type = "chapter"
 weight = 99
 +++
 
-{{% children depth="3" sort="date" order="asc" %}}
+{{% children depth="3" sort="weight" order="desc" description="false" %}}

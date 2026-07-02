@@ -140,3 +140,58 @@
 .home .card-container .card-content {
   padding: 1.1rem;
 }
+
+/* ---------------------------------------------------------------------------
+   Sidebar footer social / project links
+   A small row of brand icons above the theme's "Built with Hugo" line in
+   #R-footer (see layouts/partials/menu-footer.html).
+--------------------------------------------------------------------------- */
+.l4j-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 0 1.25rem 0;
+}
+.l4j-social a,
+.l4j-social a:visited {
+  color: inherit;
+  opacity: 0.75;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+.l4j-social a:hover,
+.l4j-social a:active,
+.l4j-social a:focus {
+  opacity: 1;
+  color: #f0b010; /* brand gold */
+}
+
+/* ---------------------------------------------------------------------------
+   Image gallery
+   A responsive grid of screenshots. Each image uses the relearn theme's own
+   built-in lightbox (click to enlarge), so no extra JS/CSS libraries needed.
+   The markdown images inside .l4j-gallery render as .lightbox-link thumbnails;
+   the theme's .lightbox-back overlays are position:fixed and stay out of the
+   grid flow.
+--------------------------------------------------------------------------- */
+.l4j-gallery p {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+  margin: 1rem 0;
+}
+.l4j-gallery p .lightbox-link {
+  margin: 0;
+}
+.l4j-gallery p .lightbox-link img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+}
+@media screen and (max-width: 47.999rem) {
+  .l4j-gallery p { grid-template-columns: 1fr; }
+}
