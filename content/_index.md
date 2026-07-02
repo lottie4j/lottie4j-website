@@ -91,4 +91,8 @@ New to Lottie? Check out our [introduction to the Lottie format](/lottie-format/
 
 Lottie4J is released and under active development. The library can parse Lottie files into Java objects, generate Lottie files from Java objects, and play animations in JavaFX, including keyframe interpolation, animated properties, shape rendering, fills and gradients, stroke styling, trim paths, layer transforms and parenting. It already handles many complex real-world animations.
 
+Latest updates:
+
+{{< latest-status 4 >}}
+
 Follow the progress in the [status posts](/status/) and check the [release notes](/releases/) for the latest changes.

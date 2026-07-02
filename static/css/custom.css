@@ -195,3 +195,20 @@
 @media screen and (max-width: 47.999rem) {
   .l4j-gallery p { grid-template-columns: 1fr; }
 }
+
+/* ---------------------------------------------------------------------------
+   Homepage "Latest updates" cards (latest-status shortcode)
+   Reuses the theme's card component, matching the "Why Lottie4J" section.
+   Force 4 on one row: the selector below (0,0,3,0) outranks the theme's
+   responsive ".card-container" rule "article:not(.narrow) .card-container"
+   (0,0,2,1) that would otherwise drop to 2 columns below ~960px. Collapse to
+   2 columns only on phones.
+--------------------------------------------------------------------------- */
+.home .l4j-latest .card-container {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 47.999rem) {
+  .home .l4j-latest .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
