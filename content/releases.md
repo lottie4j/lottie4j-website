@@ -4,6 +4,21 @@ description = "Release notes and changelog for the Lottie4J Java library, includ
 weight = 10
 +++
 
+## 2026-07-09, 1.2.5
+
+* Fixed matte type handling (tt:2 = INVERTED_ALPHA).
+* Merged gradient alpha and color stops at the union of offsets, and added linear-RGB gradient stop densification, for more accurate gradient rendering.
+* Fixed text-layer color handling and added support for animated text color.
+* Fixed blend-mode offscreen buffer sizing (ceiling instead of truncating).
+* Improved Gaussian blur accuracy.
+* Ported lottie-web's BezierEaser byte-for-byte into a shared `core.helper.BezierEasing`, improving easing fidelity.
+* Extracted pixel-level matte composition into a testable static helper, with further correctness improvements.
+* Switched temporary files to publicly writable directories.
+* Migrated the WebView reference renderer used in comparison tests from lottie-web to dotlottie-wc (thorvg).
+* Various code-quality improvements from SonarQube review, plus expanded unit and comparison test coverage.
+
+The list of all changes between 1.2.4 and 1.2.5 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.4...v1.2.5).
+
 ## 2026-06-15, 1.2.4
 
 * Fixed Lottie arc rendering: constrained the easing solver to prevent bezier curve divergence.

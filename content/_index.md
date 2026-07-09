@@ -12,7 +12,7 @@ type = "home"
     <br/>
     <strong>No WebView required.</strong>
   </p>
-  <p class="l4j-hero-release"><span class="l4j-hero-dot"></span> Latest release: <a href="/releases/">v1.2.4 · 2026-06-15</a></p>
+  <p class="l4j-hero-release"><span class="l4j-hero-dot"></span> Latest release: <a href="/releases/">v1.2.5 · 2026-07-09</a></p>
   <p class="l4j-hero-cta">
     <a class="l4j-btn l4j-btn-primary" href="#quick-start"><i class="fas fa-rocket"></i> Get Started</a>
     <a class="l4j-btn l4j-btn-ghost" href="https://github.com/lottie4j/lottie4j" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
