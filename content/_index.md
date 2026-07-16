@@ -31,18 +31,18 @@ Lottie4J requires **Java 21 or higher** and is available from Maven Central. Add
 <dependency>
     <groupId>com.lottie4j</groupId>
     <artifactId>fxplayer</artifactId>
-    <version>1.2.4</version>
+    <version>${lottie4j.version}</version>
 </dependency>
 ```
 {{% /tab %}}
 {{% tab title="Gradle (Kotlin)" %}}
 ```kotlin
-implementation("com.lottie4j:fxplayer:1.2.4")
+implementation("com.lottie4j:fxplayer:$lottie4jVersion")
 ```
 {{% /tab %}}
 {{% tab title="Gradle (Groovy)" %}}
 ```groovy
-implementation 'com.lottie4j:fxplayer:1.2.4'
+implementation "com.lottie4j:fxplayer:${lottie4jVersion}"
 ```
 {{% /tab %}}
 {{< /tabs >}}
