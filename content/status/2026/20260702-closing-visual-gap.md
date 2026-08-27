@@ -3,9 +3,8 @@ title: "Closing the Visual Gap"
 date: 2026-07-02
 tags: ["Java", "JavaFX", "Lottie4J", "AI"]
 canonical: "https://webtechie.be/post/closing-the-visual-gap-between-the-official-lottie-webplayer-and-lottie4j/"
+description: "How Lottie4J's JavaFX output is now verified frame by frame against the official Lottie web player, and the rendering fixes that comparison made possible."
 ---
-
-**2026-07-02 by Frank Delporte**
 
 ## Closing the Visual Gap with the Official Lottie Webplayer
 
