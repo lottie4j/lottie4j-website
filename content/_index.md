@@ -96,3 +96,7 @@ Latest updates:
 {{< latest-status 4 >}}
 
 Follow the progress in the [status posts](/status/) and check the [release notes](/releases/) for the latest changes.
+
+## Related projects
+
+Lottie4J is part of a small family of projects built on the same approach: parse a standard file format into typed Java objects and render it natively in JavaFX, without a WebView. [Sheetmusic4J](https://sheetmusic4j.com/) applies that idea to MusicXML, parsing it into Java objects and rendering it as native JavaFX music sheet views. [MelodyMatrix](https://melodymatrix.rocks/) is a Java, Kotlin and JavaFX desktop app that captures MIDI keyboard performances and shows them through synchronized visualizations — piano rolls, sheet music, charts and light effects.
