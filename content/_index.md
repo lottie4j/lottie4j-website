@@ -12,7 +12,7 @@ type = "home"
     <br/>
     <strong>No WebView required.</strong>
   </p>
-  <p class="l4j-hero-release"><span class="l4j-hero-dot"></span> Latest release: <a href="/releases/">v1.2.5 · 2026-07-09</a></p>
+  <p class="l4j-hero-release"><span class="l4j-hero-dot"></span> Latest release: <a href="/releases/">v{{% param "release.version" %}} · {{% param "release.date" %}}</a></p>
   <p class="l4j-hero-cta">
     <a class="l4j-btn l4j-btn-primary" href="#quick-start"><i class="fas fa-rocket"></i> Get Started</a>
     <a class="l4j-btn l4j-btn-ghost" href="https://github.com/lottie4j/lottie4j" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
@@ -31,18 +31,18 @@ Lottie4J requires **Java 21 or higher** and is available from Maven Central. Add
 <dependency>
     <groupId>com.lottie4j</groupId>
     <artifactId>fxplayer</artifactId>
-    <version>${lottie4j.version}</version>
+    <version>{{% param "release.version" %}}</version>
 </dependency>
 ```
 {{% /tab %}}
 {{% tab title="Gradle (Kotlin)" %}}
 ```kotlin
-implementation("com.lottie4j:fxplayer:$lottie4jVersion")
+implementation("com.lottie4j:fxplayer:{{% param "release.version" %}}")
 ```
 {{% /tab %}}
 {{% tab title="Gradle (Groovy)" %}}
 ```groovy
-implementation "com.lottie4j:fxplayer:${lottie4jVersion}"
+implementation "com.lottie4j:fxplayer:{{% param "release.version" %}}"
 ```
 {{% /tab %}}
 {{< /tabs >}}
