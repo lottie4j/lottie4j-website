@@ -16,7 +16,7 @@ If you only need the API to load and/or save Lottie json files:
 <dependency>
     <groupId>com.lottie4j</groupId>
     <artifactId>core</artifactId>
-    <version>${lottie4j.version}</version>
+    <version>{{% param "release.version" %}}</version>
 </dependency>
 ```
 
@@ -26,7 +26,7 @@ If you want to use the JavaFX LottiePlayer, which includes the core library:
 <dependency>
     <groupId>com.lottie4j</groupId>
     <artifactId>fxplayer</artifactId>
-    <version>${lottie4j.version}</version>
+    <version>{{% param "release.version" %}}</version>
 </dependency>
 ```
 
