@@ -4,6 +4,14 @@ description = "Release notes and changelog for the Lottie4J Java library, includ
 weight = 10
 +++
 
+## 2026-10-01, 1.2.6
+
+* [PR #11 by @zapek](https://github.com/lottie4j/lottie4j/pull/11): Switched animation lifecycle log messages (start, stop, offscreen blend-mode rendering) from `info` to `debug` level, to stop them from flooding the log output.
+
+Thanks to contributions by [@zapek](https://github.com/zapek).
+
+The list of all changes between 1.2.5 and 1.2.6 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.5...v1.2.6).
+
 ## 2026-07-09, 1.2.5
 
 * Fixed matte type handling (tt:2 = INVERTED_ALPHA).
