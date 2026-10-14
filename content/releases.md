@@ -4,6 +4,15 @@ description = "Release notes and changelog for the Lottie4J Java library, includ
 weight = 10
 +++
 
+## 2026-10-14, 1.2.7
+
+* Performance: image assets are now decoded once per player and cached (including failed loads), instead of base64-decoding and re-creating a JavaFX `Image` on every frame. All image assets are preloaded when the player builds its render caches, so the first frame doesn't stall either.
+* Performance: `MatteRenderer` reuses its off-screen canvases, snapshot images and pixel buffers between frames while the size is unchanged, and the debug-only pixel sampling no longer runs when debug logging is disabled. In a profiling run this cut GC pauses by about two thirds and removed PNG decoding from the hot methods.
+* File viewer: fixed leaked players and tree-cell bindings when loading another file, and the WebView comparison no longer blocks the JavaFX thread while shutting down ChromeDriver.
+* Added a profiling harness (`tools/profiling/`) to check the viewers for memory leaks, FX-thread stalls and lingering threads.
+
+The list of all changes between 1.2.6 and 1.2.7 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.6...v1.2.7).
+
 ## 2026-10-01, 1.2.6
 
 * [PR #11 by @zapek](https://github.com/lottie4j/lottie4j/pull/11): Switched animation lifecycle log messages (start, stop, offscreen blend-mode rendering) from `info` to `debug` level, to stop them from flooding the log output.
