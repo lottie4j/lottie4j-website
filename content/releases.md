@@ -11,6 +11,8 @@ weight = 10
 * File viewer: fixed leaked players and tree-cell bindings when loading another file, and the WebView comparison no longer blocks the JavaFX thread while shutting down ChromeDriver.
 * Added a profiling harness (`tools/profiling/`) to check the viewers for memory leaks, FX-thread stalls and lingering threads.
 
+Read more in the [release announcement](/status/2026/20261014-release-1.2.7/).
+
 The list of all changes between 1.2.6 and 1.2.7 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.6...v1.2.7).
 
 ## 2026-10-01, 1.2.6
