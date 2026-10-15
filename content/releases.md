@@ -4,6 +4,16 @@ description = "Release notes and changelog for the Lottie4J Java library, includ
 weight = 10
 +++
 
+## 2026-10-15, 1.2.8
+
+* [Issue #12 by @bruno-obv](https://github.com/lottie4j/lottie4j/issues/12): Fixed a regression in 1.2.7 where animations with track mattes of different sizes showed horizontal streaks during playback. The `MatteRenderer` now only reuses a cached snapshot image when its size matches the matte, as a snapshot into a smaller image got cropped and then stretched.
+* Added a regression test that compares sequential playback with a fresh seek on every frame, and added the Noto "collision" emoji to the comparison tests.
+* [PR #14](https://github.com/lottie4j/lottie4j/pull/14): The rendering comparison tests now disable adaptive off-screen scaling, so they measure rendering fidelity only. Before, the scores of heavy animations depended on how busy the CI runner was, which made the build flaky. No library code changes.
+
+Thanks to [@bruno-obv](https://github.com/bruno-obv) for the detailed bug report and fix.
+
+The list of all changes between 1.2.7 and 1.2.8 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.7...v1.2.8).
+
 ## 2026-10-14, 1.2.7
 
 * Performance: image assets are now decoded once per player and cached (including failed loads), instead of base64-decoding and re-creating a JavaFX `Image` on every frame. All image assets are preloaded when the player builds its render caches, so the first frame doesn't stall either.

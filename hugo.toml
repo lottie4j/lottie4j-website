@@ -19,6 +19,6 @@ images = ['img/og-image.png']
 name = 'Frank Delporte'
 
 [params.release]
-version = '1.2.7'
-date = '2026-10-14'
+version = '1.2.8'
+date = '2026-10-15'
 link = '/status/2026/20261014-release-1.2.7/'
