@@ -12,6 +12,8 @@ weight = 10
 
 Thanks to [@bruno-obv](https://github.com/bruno-obv) for the detailed bug report and fix.
 
+Read more in the [release announcement](/status/2026/20261015-release-1.2.8/).
+
 The list of all changes between 1.2.7 and 1.2.8 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.7...v1.2.8).
 
 ## 2026-10-14, 1.2.7
