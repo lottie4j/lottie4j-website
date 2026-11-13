@@ -2,6 +2,8 @@
   Project override of the relearn theme's custom-header.html.
   Keeps the theme's original custom.css / custom.js loading behaviour, and
   additionally injects a canonical link and JSON-LD structured data for SEO.
+  On the homepage the JSON-LD is a SoftwareSourceCode and a SoftwareApplication
+  block, both taking softwareVersion/dateModified from [params.release] in hugo.toml.
 */ -}}
 
 {{- /* ---- canonical URL (Hugo's native .Permalink is already clean) ---- */ -}}
@@ -22,7 +24,34 @@
       "programmingLanguage": "Java",
       "runtimePlatform": "Java 21+, JavaFX",
       "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "softwareVersion": {{ site.Params.release.version }},
+      "dateModified": {{ site.Params.release.date }},
       "image": {{ (printf "img/og-image.png" | absURL) }},
+      "author": {
+        "@type": "Person",
+        "name": {{ partialCached "_relearn/authorName.gotmpl" . | default "Frank Delporte" }}
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lottie4J",
+      "description": "Open-source Java library to parse Lottie animations into Java objects, generate Lottie files, and play them as native JavaFX animations, no WebView required.",
+      "url": {{ .Permalink }},
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cross-platform (Java 21+, JavaFX)",
+      "softwareVersion": {{ site.Params.release.version }},
+      "dateModified": {{ site.Params.release.date }},
+      "downloadUrl": "https://github.com/lottie4j/lottie4j",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "image": {{ (printf "img/og-image.png" | absURL) }},
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
       "author": {
         "@type": "Person",
         "name": {{ partialCached "_relearn/authorName.gotmpl" . | default "Frank Delporte" }}
