@@ -4,6 +4,21 @@ description = "Release notes and changelog for the Lottie4J Java library, includ
 weight = 10
 +++
 
+## 2026-11-19, 1.3.0
+
+* [PR #15](https://github.com/lottie4j/lottie4j/pull/15): Real-world Lottie files are now read leniently. Files with expressions, external image assets, unknown layer types, blend modes or shapes, and properties written as a bare number used to be rejected and now load. Expressions are kept and written back, but never evaluated.
+* Frame rate, in point and out point are now read as `Double`, so 29.97 fps is no longer read as 29. `FrameTiming.getFrameRate` gives the exact rate and the player uses it for playback.
+* Solid color layers use their own `sw` and `sh` size instead of filling three times the composition.
+* Keyframes in the pre-5 format are completed on load, precompositions that contain themselves and parents that run in a circle no longer cause a `StackOverflowError`, and a track matte named with `tp` is now honored.
+* Hidden layers and shapes (`"hd": true`) are no longer drawn, but a hidden layer still serves as parent and matte.
+* New: `UnsupportedFeatures.find(animation)` lists what a file uses that the player doesn't draw, `LottiePlayer.snapshotFrame(double)` renders one frame into an image, and `ImageSimilarity` is now public in `com.lottie4j.fxplayer.util`.
+* New in the model: `Animation.fonts()`, `Layer.styles()`, `LottieFileLoader.load(InputStream)` and `loadJson(String)`.
+* API changes: `Asset.shapeType` is renamed to `Asset.directory` (a `String`), timing values return `Double` instead of `Integer`, and the definitions' `fromValue` return `null` for unknown values instead of throwing.
+
+Read more in the [release announcement](/status/2026/20261119-release-1.3.0/).
+
+The list of all changes between 1.2.8 and 1.3.0 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.2.8...v1.3.0).
+
 ## 2026-10-15, 1.2.8
 
 * [Issue #12 by @bruno-obv](https://github.com/lottie4j/lottie4j/issues/12): Fixed a regression in 1.2.7 where animations with track mattes of different sizes showed horizontal streaks during playback. The `MatteRenderer` now only reuses a cached snapshot image when its size matches the matte, as a snapshot into a smaller image got cropped and then stretched.
