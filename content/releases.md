@@ -4,6 +4,15 @@ description = "Release notes and changelog for the Lottie4J Java library, includ
 weight = 10
 +++
 
+## 2026-11-19, 1.4.0
+
+* [PR #16](https://github.com/lottie4j/lottie4j/pull/16): `LottieFileSaver` now writes what `LottieFileLoader` reads. `save(Animation, File | OutputStream)` writes Lottie JSON, `saveDotLottie(DotLottie, File | OutputStream)` writes a dotLottie archive (manifest, animations, themes, state machines, images and fonts), and `saveDotLottie(Animation, id, OutputStream)` writes a single animation as a version 2 archive. Animation ids that are missing or would leave their directory are refused.
+* Audio layers (`ty` 6) now keep their levels. The new record `AudioSettings` holds the animated left and right channel level from `au.lv` in percent, available as `Layer.audioSettings()`, and is read and written. The player does not play sound. The previous canonical constructor of `Layer` is kept, so code written against 1.3.0 still compiles.
+
+Read more in the [release announcement](/status/2026/20261119-release-1.4.0/).
+
+The list of all changes between 1.3.0 and 1.4.0 is [available on GitHub](https://github.com/lottie4j/lottie4j/compare/v1.3.0...v1.4.0).
+
 ## 2026-11-19, 1.3.0
 
 * [PR #15](https://github.com/lottie4j/lottie4j/pull/15): Real-world Lottie files are now read leniently. Files with expressions, external image assets, unknown layer types, blend modes or shapes, and properties written as a bare number used to be rejected and now load. Expressions are kept and written back, but never evaluated.
